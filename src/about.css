@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px; 
+  background: #960379;
+  color: white;
+  position:-ms-page;
+  width: 100%;
+  bottom: 0;
+}
+
+.navbar nav a {
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 400px;
+  background: url("../images/navigation\ image.jpg")
+              center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(142, 63, 135, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  color: #F2C4EE;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* CONTENT */
+.about-content {
+  padding: 50px;
+  gap: 40px;
+}
+.about-content{
+  background: linear-gradient(180deg, #f2c4ee, #8e3f87);
+}
+
+
+.story   {
+  color: #000000;
+  margin-bottom: px;
+}
+
+.story p{
+     color: #000000;
+}
+
+/* FOUNDER */
+
+.founder-box {
+  gap: 20px;
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.founder-img {
+  width: 400px;
+  height: 400px;
+  background: url("../images/founderpic.jpeg")
+              center/cover no-repeat;
+  border-radius: 10px;
+}
+
+blockquote { 
+  font-style: italic;
+  color: #000000;
+}
