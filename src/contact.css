@@ -26,11 +26,11 @@ body {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 10vh;
 }
 
 .page-wrapper {
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
 }
