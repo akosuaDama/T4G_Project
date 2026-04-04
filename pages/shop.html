@@ -1,138 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AK Sleep & Slay</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AK Sleep & Slay</title>
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/416eee93e4.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/416eee93e4.js"
+      crossorigin="anonymous"
+    ></script>
 
-<link rel="stylesheet" href="../src/shop.css">
-</head>
+    <link rel="stylesheet" href="../src/shop.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="left">
+          <i class="fas fa-bars"></i>
+          <div>
+            <h3>Hi, Dela Gray</h3>
+            <p class="subtext">Find your cozy sleep essentials here!</p>
+          </div>
+        </div>
 
-<div class="app">
+        <div class="right">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-user"></i>
+        </div>
+      </header>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="left">
-      <i class="fas fa-bars"></i>
-      <div>
-        <h3>Hi, Dela Gray</h3>
-        <p class="subtext">Find your cozy sleep essentials here!</p>
+      <!-- CATEGORY -->
+      <div class="categories">
+        <div class="cat">
+          <i class="fas fa-tshirt"></i>
+          <p>Pyjamas</p>
+        </div>
+        <div class="cat">
+          <i class="fas fa-socks"></i>
+          <p>Socks</p>
+        </div>
+        <div class="cat">
+          <i class="fas fa-bed"></i>
+          <p>Pillows</p>
+        </div>
+        <div class="cat">
+          <i class="fas fa-shoe-prints"></i>
+          <p>Bedroom slippers</p>
+        </div>
       </div>
+
+      <!-- PRODUCTS -->
+      <div class="grid" id="product-list"></div>
+
+      <!-- BOTTOM NAV -->
+      <nav class="bottom">
+        <a href="../index.html"><i class="fas fa-home"></i></a>
+        <a href="../pages/cart.html" class="cart-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+        <a href="../pages/wishlist.html"><i class="fas fa-heart"></i></a>
+        <a href="../pages/settings.html"><i class="fas fa-cog"></i></a>
+      </nav>
     </div>
-
-    <div class="right">
-      <i class="fas fa-search"></i>
-      <i class="fas fa-user"></i>
-    </div>
-  </header>
-
-  <!-- CATEGORY -->
-  <div class="categories">
-    <div class="cat"><i class="fas fa-tshirt"></i><p>Pyjamas</p></div>
-    <div class="cat"><i class="fas fa-socks"></i><p>Socks</p></div>
-    <div class="cat"><i class="fas fa-bed"></i><p>Pillows</p></div>
-    <div class="cat"><i class="fas fa-shoe-prints"></i><p>Bedroom slippers</p></div>
-  </div>
-
-  <!-- PRODUCTS -->
-  <div class="grid">
-
-    <!-- CARD -->
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/pyjamas1.jpg" alt="Silk Pyjamas" class="product-image" width="489">
-      </div>
-      <h4 class="product-name">Silk Pyjamas</h4>
-      <p>300</p>
-      <button>Add To Cart</button>
-    </div>
-
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/3rd bow bonnet.jpg" alt="3rd Bow Bonnet" class="product-image" width="489">
-      </div>
-      <h4 class="product-name">Bow Bonnet</h4>
-      <p>80</p>
-      <button>Add To Cart</button>
-    </div>
-
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/cushion.jpg" alt="Cushion" class="product-image" width="489px">
-      </div>
-      <h4 class="product-name">Cushion</h4>
-      <p>100</p>
-      <button>Add To Cart</button>
-    </div>
-
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/pink duvet.jpg" alt="Pink Duvet" class="product-image" width="489">
-      </div>
-      <h4 class="product-name">Fluffy Duvet</h4>
-      <p>450</p>
-      <button>Add To Cart</button>
-    </div>
-
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/2nd bow bonnet.jpg" alt="Bow Bonnet" class="product-image" width="489">
-      </div>
-      <h4 class="product-name">Bow Bonnet</h4>
-      <p>80</p>
-      <button>Add To Cart</button>
-    </div>
-
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/pyjamas2.jpg" alt="Pyjamas" class="product-image" width="489">
-      </div>
-      <h4 class="product-name">Pyjamas</h4>
-      <p>300</p>
-      <button>Add To Cart</button>
-    </div>
-
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/bonnet.jpg" alt="Pink Bonnet" class="product-image" width="489">
-      </div>
-      <h4 class="product-name">Pink Bonnet</h4>
-      <p>80</p>
-      <button>Add To Cart</button>
-    </div>
-
-    <div class="card">
-      <i class="fa-regular fa-heart heart"></i>
-      <div class="img-box">
-      <img src="../images/pyjamas3.jpg" alt="Pyjamas" class="product-image" width="489">
-      </div>
-      <h4 class="product-name">Pyjamas</h4>
-      <p>300</p>
-      <button>Add To Cart</button>
-    </div>
-  </div>
-
-  <!-- BOTTOM NAV -->
-  <nav class="bottom">
-    <a href="../index.html"><i class="fas fa-home"></i></a>
-    <a href="../pages/cart.html"><i class="fas fa-shopping-cart"></i></a>
-    <a href="../pages/wishlist.html"><i class="fas fa-heart"></i></a>
-    <a href="../pages/settings.html"><i class="fas fa-cog"></i></a>
-  </nav>
-
-</div>
-
-</body>
+    <script src="../src/shop.js"></script>
+  </body>
 </html>

@@ -146,7 +146,7 @@ body {
 /* HEART ICON */
 .heart {
   position: absolute;
-  top: 32px;   /* space from top */
+  top: 32px; /* space from top */
   right: 32px; /* space from right */
   background-color: red;
   border-radius: 50%;
@@ -236,10 +236,43 @@ button:hover {
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
   z-index: 20;
 }
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav:hover a {
+  color: #ffd6f5;
+}
 
 .bottom i {
   font-size: 22px;
   cursor: pointer;
+}
+
+/* Cart badge */
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff3b30;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* animation */
+.cart-count.bump {
+  transform: scale(1.3);
 }
 
 /* RESPONSIVE GRID */
